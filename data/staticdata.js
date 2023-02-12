@@ -15,6 +15,13 @@ const events = [
         description: 'Påskdagen firas till minne av Jesu uppståndelse från de döda.',
         link: '/synaxarium/paskdagen'
     },
+    {
+        id: 5,
+        date: "2022-12-09",
+        title: "Johannes Cassianus",
+        description: "Förmedlade den östliga munktraditionens ljus till Väst",
+        link: "/synaxarium/johannes-cassianus"
+    }
 
 ];
 

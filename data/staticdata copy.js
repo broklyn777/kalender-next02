@@ -67,7 +67,14 @@ const events = [
         "title": "Nyårsafton",
         "description": "Nyårsafton är en högtid som firas vid årets slut.",
         "link": "https://kalender01.vercel.app/"
-    }
+    },
+    {
+        "id": 11,
+        "date": "2022-12-09",
+        "title": "Johannes Cassianus",
+        "description": "Förmedlade den östliga munktraditionens ljus till Väst",
+        "link": "/synaxarium/johannes-cassianus"
+    },
     // ...
 ];
 
