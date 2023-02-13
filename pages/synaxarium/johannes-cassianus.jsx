@@ -24,7 +24,11 @@ export default function JohannesCassianus() {
 
       <p className={styles.paragraph}>
         Cassianus var en av de första som förmedlade den östliga munktraditionens ljus till Väst, och han skrev flera
-        verk om munklivet och det kristna andliga livet. Hans verk, bland annat "Om inre kamp", "Institutioner" och "Om
+        verk om munklivet och det kristna andliga livet. Hans verk, bland annat "Om inre kamp"<sup className={styles.footnoteNumber}>
+    <a href="#footnote1" id="ref1">
+      1
+    </a>
+  </sup>, "Institutioner" och "Om
         profeterna", blev mycket inflytelserika och användes som läroböcker för munkar under medeltiden.
       </p>
 
@@ -150,9 +154,15 @@ utan att man måste också genomföra "det andra avståndet", som innebär att a
   särskilt mot frestelsen av acedia (<span className={styles.tooltip}>tristess<span className={styles.tooltiptext}>Acedia, eller "tristess", 
   är en av de åtta grundläggande passionerna inom kristen teologi. Det beskrivs som en andlig sjukdom som innebär likgiltighet, depression och en 
   brist på motivation eller intresse för andliga övningar.</span></span>) som plågar eremiter för att få dem att lämna sin reträtt. Från denna personliga erfarenhet och undervisning 
-  från den store Evagrius 7 (<span className={styles.tooltip}>Evagrius 7<span className={styles.tooltiptext}>Evagrius Ponticus var en kristen munk och teolog på 300-talet som också var en elev till Sankt Johannes Cassianus.</span></span>), som han mötte i Nitria, utvecklade han en fin lära om andlig kamp och de åtta grundläggande passionerna: girighet, sexuell lust, girighet, ilska, sorg, acedia, fåfänglighet och högmod 8 (<span className={styles.tooltip}>De åtta passionerna<span className={styles.tooltiptext}>De åtta passionerna är en lista över psykiska passioner som Evagrius Ponticus och Sankt Johannes Cassianus beskrev och analyserade. Dessa passioner var grunden för senare kristna författares läror om synd och andlig kamp.</span></span>).
+  från den store Evagrius 7 (<span className={styles.tooltip}>Evagrius 7<span className={styles.tooltiptext}>Evagrius Ponticus var <span className={styles.footnote} id="footnote1">
+    Här kan du skriva mer information om fotnoten.
+  </span> en kristen munk och teolog på 300-talet som också var en elev till Sankt Johannes Cassianus.</span></span>), som han mötte i Nitria, utvecklade han en fin lära om andlig kamp och de åtta grundläggande passionerna: girighet, sexuell lust, girighet, ilska, sorg, acedia, fåfänglighet och högmod 8 (<span className={styles.tooltip}>De åtta passionerna<span className={styles.tooltiptext}>De åtta passionerna är en lista över psykiska passioner som Evagrius Ponticus och Sankt Johannes Cassianus beskrev och analyserade. Dessa passioner var grunden för senare kristna författares läror om synd och andlig kamp.</span></span>).
 </p>
-
+  <sup className={styles.footnoteNumber}>
+    <a href="#footnote1" id="ref1">
+      1
+    </a>
+  </sup>
         
        
     </div>

@@ -30,6 +30,22 @@ function Easter() {
         korsfästelse genom att delta i en ceremoni som kallas "Stations of the Cross". Denna ceremoni är en meditativ
         vandring genom 14 stationer som representerar olika händelser i Jesu sista timmar.
       </p>
+
+      <p>
+  Detta är en text med en fotnot. 
+  <sup className={styles.footnoteNumber}>
+    <a href="#footnote1" id="ref1">
+      1
+    </a>
+  </sup>
+</p>
+
+<p>
+  Detta är själva fotnoten. 
+  <span className={styles.footnote} id="footnote1">
+    Här kan du skriva mer information om fotnoten.
+  </span>
+</p>
       </div>
     </>
   );
