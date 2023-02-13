@@ -75,6 +75,13 @@ const events = [
         "description": "Förmedlade den östliga munktraditionens ljus till Väst",
         "link": "/synaxarium/johannes-cassianus"
     },
+    {
+        "id": 12,
+        "date": "2022-01-09",
+        "title": "Synaxarium",
+        "description": "Förmedlade den östliga munktraditionens ljus till Väst",
+        "link": "/synaxarium/synaxarium"
+    },
     // ...
 ];
 

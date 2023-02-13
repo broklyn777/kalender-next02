@@ -35,6 +35,7 @@
 
 import CalendarComponent from '@/components/CalendarComponent';
 import React from 'react';
+import Footnote from '@/components/Footnote';
 
 function HomePage() {
   return (
@@ -42,10 +43,25 @@ function HomePage() {
       <div>
 
         <CalendarComponent />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi auctor <Footnote number="1" text="A footnote about Morbi auctor" /> euismod dolor, quis dapibus mi vestibulum ac.
+          Sed ut felis et augue pulvinar gravida. Fusce sagittis velit ac luctus malesuada.
+          <Footnote number="2" text="A footnote about Fusce sagittis" />
+        </p>
+        <div>
+
+
+        </div>
 
       </div>
     </>
   );
+
+
+
+
+
 }
 
 export default HomePage;

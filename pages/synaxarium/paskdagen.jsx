@@ -1,6 +1,7 @@
 
 import styles from '../../styles/Synaxarium.module.css';
 import Head from 'next/head';
+import Footnote from '@/components/Footnote';
 
 export default function Easter() {
   const pageTitle = "Påskdagens betydelse för ortodoxa kristna";
@@ -15,8 +16,12 @@ export default function Easter() {
         <div className={styles.content}>
           <h2 className={styles.subtitle}>Bakgrund</h2>
           <p className={styles.paragraph}>
-            Påskdagen är en av de mest betydelsefulla helgdagarna för ortodoxa kristna runt om i världen. Det är en dag som markerar Jesu uppståndelse från de döda, och representerar hoppet om evigt liv för kristna. För ortodoxa kristna är påskdagen en tid för glädje och firande, men det är också en tid för eftertanke och reflektion över Jesu liv, död och uppståndelse.
+            Påskdagen är en av de mest betydelsefulla helgdagarna för ortodoxa kristna <Footnote number="1" text="Abboten Joseph var en framstående ledare inom den tidiga klosterrörelsen. Hans råd till de två vännerna visade sig vara mycket värdefullt och hade en stor inverkan på deras andliga utveckling."/> runt om i världen. Det är en dag som markerar Jesu uppståndelse från de döda, och representerar hoppet om evigt liv för kristna. För ortodoxa kristna är påskdagen en tid för glädje och firande, men det är också en tid för eftertanke och reflektion över Jesu liv, död och uppståndelse.
           </p>
+
+
+<Footnote number={1} text="Abboten Joseph var en framstående ledare inom den tidiga klosterrörelsen. Hans råd till de två vännerna visade sig vara mycket värdefullt och hade en stor inverkan på deras andliga utveckling." />
+
 
           <h2 className={styles.subtitle}>Jesu liv, död och uppståndelse</h2>
           <p className={styles.paragraph}>

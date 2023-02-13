@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../../styles/Synaxarium.module.css';
 import events from '../../data/staticdata';
+import Footnote from '@/components/Footnote';
 
 const event = events.find((event) => event.id === 5);
 
@@ -18,17 +19,21 @@ export default function JohannesCassianus() {
       <h2 className={styles.subtitle}>{description}</h2>
 
       <p className={styles.paragraph}>
-        Johannes Cassianus, född omkring år 360 i Dakien (dagens Rumänien), var en munk och författare som var aktiv under
+        Johannes Cassianus, född omkring år 360 i Dakien <Footnote number="1" text="Dacia var en region som låg i nuvarande Östeuropa och inkluderade delar av dagens Rumänien, Moldavien och Serbien. Regionen var en del av det Romerska Riket under perioden 106 till 274 e.Kr. Dacia blev känt för sin rika jordbruksproduktion och sin skickliga metallhantverk. De daciska folken var också kända för sina krigare och starka ledare, inklusive kung Decebalus, som ledde en långvarig och framgångsrik kamp mot Rom under hans regeringstid. Efter det Romerska Rikets kollaps i slutet av 4:e århundradet e.Kr. blev Dacia en del av den germanska migrationen och den slaviska bosättningen. Idag minns vi Dacia som en viktig del av Europas historia och kulturarv."/>  (dagens Rumänien), var en munk och författare som var aktiv under
         400-talet. Han var verksam i olika delar av det östra Romarriket, däribland i Palestina, Egypten och Konstantinopel.
       </p>
 
       <p className={styles.paragraph}>
         Cassianus var en av de första som förmedlade den östliga munktraditionens ljus till Väst, och han skrev flera
-        verk om munklivet och det kristna andliga livet. Hans verk, bland annat "Om inre kamp"<sup className={styles.footnoteNumber}>
+        verk om munklivet och det kristna andliga livet. Hans verk, bland annat "Om inre kamp"
+        
+        {/* <sup className={styles.footnoteNumber}>
     <a href="#footnote1" id="ref1">
       1
     </a>
-  </sup>, "Institutioner" och "Om
+  </sup> */}
+  
+  , "Institutioner" och "Om
         profeterna", blev mycket inflytelserika och användes som läroböcker för munkar under medeltiden.
       </p>
 
@@ -38,7 +43,7 @@ export default function JohannesCassianus() {
         kallade "åtta onda tankar". Cassianus lärde ut att genom att erkänna dessa tankar och genom att vända sig till
         Gud, så kunde man förvandla dem till något positivt.
       </p>
-      
+     
 
       <p className={styles.paragraph}>
         Johannes Cassianus är en av de mest inflytelserika kristna författarna under senantiken och medeltiden, och hans
@@ -49,7 +54,7 @@ export default function JohannesCassianus() {
 
 Efter flera år i öknen reste Johannes till Konstantinopel, där han studerade teologi och prästvigdes. Han vistades också en tid i Rom och Italien, där han kom i kontakt med den västliga kristna kyrkan och dess asketiska traditioner.
 
-Johannes Cassianus är mest känd för sitt verk "Collationes Patrum in Scetica Eremo", eller "Konferenser med fäderna i Sketis öken". Verket består av tjugofem konferenser som Johannes höll med öknens fäder och mödrar, där han samlade deras visdom och lärdomar om det asketiska livet.
+Johannes Cassianus är mest känd för sitt verk "Collationes Patrum in Scetica Eremo <Footnote number="22" text="Collationes Patrum in Scetica Eremo, även känt som 'Konferenser från öknen', är en samling av samtal som hållits mellan ökenfäderna i öknen Scetis i Egypten. Böckerna sammanställdes och skrevs ned av den helige Jean Cassian, en munk som besökte öknen och uppskattade lärdomarna från de heliga fäderna. Böckerna har sedan blivit en viktig del av den ortodoxa kyrkans tradition och räknas som en av de främsta källorna till ökenfädernas andliga lära. De är en viktig källa till information om ökenfädernas liv, andakt och teologi."/>", eller "Konferenser med fäderna i Sketis öken". Verket består av tjugofem konferenser som Johannes höll med öknens fäder och mödrar, där han samlade deras visdom och lärdomar om det asketiska livet.
 
 Johannes Cassianus är en viktig person inom både den östliga och västliga kristna kyrkan. Han var en brygga mellan de två kyrkorna och förmedlade den östliga munktraditionens ljus till Väst. Hans verk har haft en stor påverkan på den kristna spiritualiteten och har inspirerat generationer av munkar och troende.
 
@@ -113,10 +118,9 @@ utan att man måste också genomföra "det andra avståndet", som innebär att a
 
 
 
-  <p>
+  {/* <p>
     <b>Fotnoter</b> <br />
-    Själens fullkomlighet uppnås genom Guds fullkomliga kärlek som flödar in i vårt hjärta genom den rena bönen, utan ord eller form. Gud blir all vår kärlek och längtan, vår sökning och vår själs allt.
-    <sup class="footnote">1</sup>
+   
   </p>
   <p>
     På icke-skottår firas helgonen av denna dag dagen innan. Sankt Germain kanoniserades av Rumäniens patriarkat 1992.
@@ -137,7 +141,7 @@ utan att man måste också genomföra "det andra avståndet", som innebär att a
   <p>
     Se konferens III, 6-10, SC 54, 145-155, för de tre avkallandena.
     <sup class="footnote">6</sup>
-  </p>
+  </p> */}
         </p>
 
 
@@ -155,16 +159,17 @@ utan att man måste också genomföra "det andra avståndet", som innebär att a
   är en av de åtta grundläggande passionerna inom kristen teologi. Det beskrivs som en andlig sjukdom som innebär likgiltighet, depression och en 
   brist på motivation eller intresse för andliga övningar.</span></span>) som plågar eremiter för att få dem att lämna sin reträtt. Från denna personliga erfarenhet och undervisning 
   från den store Evagrius 7 (<span className={styles.tooltip}>Evagrius 7<span className={styles.tooltiptext}>Evagrius Ponticus var <span className={styles.footnote} id="footnote1">
-    Här kan du skriva mer information om fotnoten.
+ 
   </span> en kristen munk och teolog på 300-talet som också var en elev till Sankt Johannes Cassianus.</span></span>), som han mötte i Nitria, utvecklade han en fin lära om andlig kamp och de åtta grundläggande passionerna: girighet, sexuell lust, girighet, ilska, sorg, acedia, fåfänglighet och högmod 8 (<span className={styles.tooltip}>De åtta passionerna<span className={styles.tooltiptext}>De åtta passionerna är en lista över psykiska passioner som Evagrius Ponticus och Sankt Johannes Cassianus beskrev och analyserade. Dessa passioner var grunden för senare kristna författares läror om synd och andlig kamp.</span></span>).
 </p>
-  <sup className={styles.footnoteNumber}>
+  {/* <sup className={styles.footnoteNumber}>
     <a href="#footnote1" id="ref1">
-      1
+      1 Själens fullkomlighet uppnås genom Guds fullkomliga kärlek som flödar in i vårt hjärta genom den rena bönen, utan ord eller form. Gud blir all vår kärlek och längtan, vår sökning och vår själs allt.
+    
     </a>
-  </sup>
+  </sup> */}
         
-       
+        <b>Fotnoter</b> <br />
     </div>
   );
 }
