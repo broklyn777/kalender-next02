@@ -22,3 +22,51 @@
     margin-bottom: 8px;
 }
 
+/* Stil för fotnotsnumret */
+.footnote-ref {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Stil för tooltip-rutan */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* font-weight: 400; */
+}
+
+/* Stil för tooltip-texten */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Placeringen av tooltip-rutan */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -150px;
+}
+
+/* Visa tooltip-rutan när användaren hovrar över fotnotsnumret */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.footnote-number {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(17, 187, 167);
+    padding-right: 0.2em;
+}
+
+.footnote-number::before {
+    content: attr(data-footnote-number);
+    margin-right: 0.2em;
+}
